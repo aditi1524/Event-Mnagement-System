@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>TODO supply a title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"></link>
+<style>
+body {
+	background-image:
+		url("addImage/microphone-conference-blur-student-seminar-room-event-background_37074-93.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+marquee {
+background-color : indianred;
+font-size:20;
+color:antiquewhite;
+opacity:.8;
+}
+.button {
+margin-top:70px;
+margin-left:40px;
+}
+</style>
+
+</head>
+<body>
+<marquee>payment of form is either payed by paytm(9087654321) or you can pay cash on event cash counter to the organizer.Take your passes from counter before event</marquee>
+	<img src="addImage/name.png" alt="Image of file" class="name-logo"
+			style="width: 400px">
+    <br />
+	<div>
+		<!-- This form needs Validation So, it is sent to the JS file and now JSP will do this Validation -->
+		<form action="CheckValidation.jsp" method="post">
+			<label>Name <input type="text" name="name" placeholder="Your Name.." required>
+			</label> <label>Father Name <input type="text"
+				name="fname" placeholder="Father's Name.." required>
+			</label> <label>Mother Name <input type="text"
+				name="mname" placeholder="Mother's Name">
+			</label> <label>E-Mail Id <input name="email" type="email"
+				 placeholder="e-mail">
+			</label> <label>Password <input name="password" type="Password"
+				 placeholder="password required" required>
+		    </label> <label>University <input name="text" type="text"
+				 placeholder="you are studying" required>
+			</label> <label>Mobile No <input name="phnNo"
+				type="text" placeholder="contact" maxlength="10" required>
+			</label> <label>Choose Event <input type="text" name="event"
+				placeholder="you participate" required>
+			</label> <label class="gender">Gender</label> <input class="gen"
+				name="gender" type="radio" value="male" checked>Male <input
+				name="gender" type="radio" value="female" checked>Female <input
+				name="gender" type="radio" value="other" checked>Other <label
+				class="enter"> <input name="submit" class = "button" type="submit">&nbsp<input name="clean" class="button" type="reset">
+			</label>
+			
+		</form>
+	</div>
+</body>
+</html>
